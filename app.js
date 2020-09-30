@@ -25,7 +25,7 @@ app.use(cookieParser());
 
 app.use('/api', authRoute);
 
-const port = 5000;
+const port = process.env.PORT;
 
 app.listen(port, () => {
   console.log(`app started on ${port}`);
